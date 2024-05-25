@@ -1,26 +1,27 @@
 package com.placement.management.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Table(name = "openings_tb")
 @Entity
 public class Openings {
 
     @Id
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "company_id", referencedColumnName = "company_id")
-    private Company company;
+    @Column
+    private String company_id;
 
     @Column
     private int noOfVacancies;
 
-
-    public Company getCompany() {
-        return company;
+    public String getCompany_id() {
+        return company_id;
     }
 
-    public void setCompany(Company company) {
-        this.company = company;
+    public void setCompany_id(String company_id) {
+        this.company_id = company_id;
     }
 
     public int getNoOfVacancies() {
