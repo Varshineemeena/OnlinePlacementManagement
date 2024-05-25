@@ -3,8 +3,8 @@ spring:
     name: OnlinePlacementManagement
   datasource:
     url: jdbc:mysql://localhost:3306/placement_management?createDatabaseIfNotExist=true
-    username: { yourUsername }
-    password: { yourPassword }
+    username: Devuser
+    password: Sundar@09
   jpa:
     properties:
       hibernate:

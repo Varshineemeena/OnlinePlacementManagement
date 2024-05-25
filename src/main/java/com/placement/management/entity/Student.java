@@ -15,6 +15,8 @@ public class Student {
     @Column(name = "student_name")
     private String studentName;
     @Column
+    private String email;
+    @Column
     private String qualification;
     @Column
     private String skills;
@@ -79,5 +81,13 @@ public class Student {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
