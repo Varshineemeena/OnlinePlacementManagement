@@ -1,4 +1,4 @@
-package com.opm;
+package com.placement.management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
